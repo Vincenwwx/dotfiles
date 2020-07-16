@@ -58,11 +58,13 @@ set mouse+=a
 
 " Apply the indentation of the current line to the next line
 set expandtab
-set tabstop=4
 set smarttab
+set tabstop=4
+set shiftwidth=4
 
 set autoindent
-
+set smartindent
+set wrap
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Text rendering
