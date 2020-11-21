@@ -9,6 +9,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SECTIONS:
 "   -> General
+"   -> Key mappings
 "   -> User interface
 "   -> Text rendering
 "   -> Search 
@@ -48,6 +49,14 @@ set noerrorbells visualbell t_vb=
 " Enable hide unsaved buffer
 set hidden
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Key mappings
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
+" Auto close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " User interface
